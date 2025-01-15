@@ -1,0 +1,20 @@
+[project]
+name = "scoperag"
+version = "0.1.0"
+description = "ScopeRAG: A General Multi-Modal Retrieval-Augmented Generation Engine for Enterprise Applications"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.6",
+    "uvicorn>=0.34.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "lint>=1.2.1",
+    "ruff>=0.9.1",
+]
