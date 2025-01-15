@@ -3,7 +3,7 @@ from enum import Enum
 
 class HealthStatus(str, Enum):
     SUCCESS = "SUCCESS"
-    FAILURE = "FAILURE"
+    ERROR = "ERROR"
 
 class HealthResponse(BaseModel):
     status: HealthStatus
